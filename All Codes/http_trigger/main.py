@@ -3,8 +3,6 @@ from datetime import datetime
 
 
 def http_trigger(request):
-  
-
     if request.method == "GET":
         return {
             "message": "HTTP GET request received",
@@ -29,4 +27,5 @@ def http_trigger(request):
 
         return response, 200
 
-    return {"error": "Method not allowed"}, 405
+    return {"error": "Method not allowed"}
+
